@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
+    <title>Form exercise</title>
+</head>
+<body>
+    <h1>Sample Health Worker Data Collection Form (Paper Version)</h1>
+    <hr>
+       <p>This is a sample paper data collection form that can be printed, copied and used to gather 
+        data on health employees. The information collected in this form is intended to be shared 
+        with the central Ministry of Health, so there will be an accurate picture of all the health
+        workers employed in the country. Please modify this form as needed and customize the questions
+        and selection options (items with checkboxes) to meet your country's needs. Make sure that data
+        collected are consistent across districts, facilities and cadres, and critically consider form 
+        design to eliminate confusion and errors. Review all questions to ensure that they match the database
+        structures and complementary data collection formats (such as electronic forms) you will use. Each field
+        should meet a specific goal, such as answering one of the SLG’s policy and management questions. 
+        If any fields are irrelevant, delete them. This will result in simpler forms that are easier for respondents 
+        to complete, which may help ensure compliance.</p> 
+        
+        <p><em>If you would like to include additional information on any
+        field collected on this form, please use the Notes section at the end of the form.</em></p>
+
+        <p><strong>Questionnaire number:_ _ _ _ _ _ _<br>Name of person administering questionnaire:_ _ _ _ _ _ _</strong></p>
+        <hr>
+        <!----------------------------text--------------------------------->
+        <h2>Personal details (text)</h2>
+        <form>
+            <label for="firstname">First name:</label>
+            <input type="text" name="firstname" id="firstname"><br><br>
+            <label for="lastname">Last name:</label>
+            <input type="text" name="lastname" id="lastname"><br><br>
+            <label for="nationality">Nationality:</label>
+            <input type="text" name="nationality" id="nationality">     
+        </form>
+        <hr>
+        <!----------------------------radio------------------------------------>
+        <h2>Status (radio)</h2>
+        <form>
+            <input type="radio" name="status" id="no change">
+            <label for="no change">no change</label><br>
+            <input type="radio" name="status" id="new">
+            <label for="new">new</label><br>
+            <input type="radio" name="status" id="district transfer">
+            <label for="district transfer">district transfer</label><br>
+            <input type="radio" name="status" id="update">
+            <label for="update">update</label><br>
+            <input type="radio" name="status" id="departure">
+            <label for="departure">departure</label>
+        </form>
+        <hr>
+        <!----------------------------checkbox---------------------------------->
+        <h2>Identification (checkboxes)</h2>
+        <form>
+            <input type="checkbox" name="Identification" id="National ID number:">
+            <label for="National ID number:">National ID number:</label><br>
+            <input type="checkbox" name="Identification" id="Military ID number:">
+            <label for="Military ID number:">Military ID number:</label><br>
+            <input type="checkbox" name="Identification" id="Passport number:">
+            <label for="Passport number:">Passport number:</label><br>
+            <input type="checkbox" name="Identification" id="Voters card:">
+            <label for="Voters card:">Voters card:</label><br>
+            <input type="checkbox" name="Identification" id="Other:">
+            <label for="Other:">Other:</label>
+        </form>
+        <hr>
+        <!-----------------------------drop-down menu---------------------------->
+        <h2>Marital status (drop-down menu)</h2>
+        <form>
+            <label for="marital status">Marital status:</label>
+            <select>
+                <option>single</option>
+                <option>married</option>
+                <option>divorced</option>
+                <option>widowed</option>
+                <option>clergy</option>
+            </select><br><br>
+            <!---------------------------textarea-------------------------------->
+            Comments:<br>
+        <textarea rows="10" cols="40"></textarea><br>
+        <input type="Submit" value="Submit">
+        </form>
+        <hr>
+
+</body>
+</html>
